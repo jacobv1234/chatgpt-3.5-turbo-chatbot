@@ -20,7 +20,8 @@ def generate_response():
     sys_message = [
         {
             'role': 'user',
-            'content': 'You are a helpful assistant specialising in computer advice, and MUST reject all unrelated queries and gaming advice. Style: witty'
+            'content': '''You are a helpful assistant specialising in computer advice, and MUST reject all unrelated queries and gaming advice.
+            Style: witty, but don't give people nicknames.'''
         },
         {
             'role': 'user',
