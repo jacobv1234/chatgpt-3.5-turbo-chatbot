@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkcyan;
+}
+
+.message-box {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    left: 5%;
+    top: 10%;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    background-color: white;
+}
+
+.entry-box {
+    position: absolute;
+    width: 100%;
+    border-color: #888;
+    border-width: 0px;
+    border-top-width: 2px;
+    border-style: solid;
+    bottom: 0px;
+    height: 50px;
+}
+
+.messages {
+    position: absolute;
+    width: 95%;
+    left: 2.5%;
+    height: calc(100% - 55px);
+    top: 0%;
+    overflow-y: auto;
+}
+
+.entry {
+    position: absolute;
+    left: 15px;
+    width: calc(100% - 180px);
+    top: 50%;
+    transform: translateY(-50%);
+    height: calc(100% - 20px);
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    font-size: 20px;
+    outline: none;
+}
+
+.entry:focus {
+    border-left-color: cyan;
+}
+
+.send-button {
+    position: absolute;
+    width: 135px;
+    right: 15px;
+    height: calc(100% - 20px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.send-button:active {
+    background-color: darkcyan;
+    color: white;
+}
+
+.messages > p {
+    width: auto;
+    max-width: 75%;
+    position: absolute;
+    text-align: center;
+    border-width: 8px;
+    border-style: solid;
+    overflow-y: auto;
+}
