@@ -19,8 +19,8 @@ def generate_response():
 
     sys_message = [
         {
-            'role': 'system',
-            'content': 'You are a helpful and creative assistant. Give all responses as if they are inside a HTML <p> tag.'
+            'role': 'user',
+            'content': 'You are a helpful and creative assistant. In your response, replace all newlines with the string <br>. Use two to separate paragraphs, and use none on the very last line.'
         }
     ]
 

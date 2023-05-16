@@ -8,13 +8,13 @@ function createClientMessage(text) {
     let message = document.createElement('p')
     message.innerHTML = text
     message.style.color = 'white'
-    message.style.backgroundColor = 'darkcyan'
+    message.style.backgroundColor = 'darkslategrey'
     message_div.appendChild(message)
     message.style.right = '3px'
     message.style.top = top_height + 'px'
     message.style.overflowX = 'auto'
     message.style.maxHeight = '300px'
-    message.style.borderColor = 'darkcyan'
+    message.style.borderColor = 'darkslategrey'
     console.log(text)
 
     top_height += message.offsetHeight + 10

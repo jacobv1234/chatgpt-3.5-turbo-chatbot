@@ -1,14 +1,23 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: darkcyan;
+    background-color: darkslategrey;
+}
+
+.fortifylogo {
+    position: absolute;
+    height: 10%;
+    top: 2.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-user-drag: none;
 }
 
 .message-box {
     position: absolute;
     width: 90%;
-    height: 80%;
+    height: 75%;
     left: 5%;
-    top: 10%;
+    bottom: 10%;
     border-radius: 10px;
     border-color: black;
     border-style: solid;
@@ -64,7 +73,7 @@ body {
 }
 
 .send-button:active {
-    background-color: darkcyan;
+    background-color: darkslategrey;
     color: white;
 }
 
