@@ -20,7 +20,11 @@ def generate_response():
     sys_message = [
         {
             'role': 'user',
-            'content': 'You are a helpful and creative assistant. In your response, replace all newlines with the string <br>. Use two to separate paragraphs, and use none on the very last line.'
+            'content': 'You are a helpful assistant specialising in computer advice, and MUST reject all unrelated queries and gaming advice. Style: witty'
+        },
+        {
+            'role': 'user',
+            'content': 'Response format: replace all newlines with the string <br>. Use two to separate paragraphs, and use none on the very last line. If you need a bullet point list, use the HTML <ul> and <li> tags. Make sure to use British spellings.'
         }
     ]
 

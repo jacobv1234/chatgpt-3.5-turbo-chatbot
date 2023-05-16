@@ -15,6 +15,7 @@ function createClientMessage(text) {
     message.style.overflowX = 'auto'
     message.style.maxHeight = '300px'
     message.style.borderColor = 'darkslategrey'
+    message.style.textAlign = 'right'
     console.log(text)
 
     top_height += message.offsetHeight + 10
@@ -32,6 +33,7 @@ function createChatbotMessage(text) {
     message.style.overflowX = 'auto'
     message.style.maxHeight = '600px'
     message.style.borderColor = 'lightgrey'
+    message.style.textAlign = 'left'
     console.log(text)
 
     top_height += message.offsetHeight + 10
@@ -74,17 +76,17 @@ function SendMessage() {
         // handle response
         .then(data => {
             console.log(data)
-            // get the text
-            let response = data['choices'][0]['message']
-
-            message_history.push({
-                role: response['role'],
-                content: response['content']
-            })
 
             if (err) {
                 entry.placeholder = 'Something went wrong.'
             } else {
+                // get the text
+                let response = data['choices'][0]['message']
+
+                message_history.push({
+                    role: response['role'],
+                    content: response['content']
+                })
                 // reenable entry and create response textbox
                 createChatbotMessage(response['content'])
                 entry.readOnly = false
