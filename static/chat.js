@@ -78,7 +78,10 @@ function SendMessage() {
             console.log(data)
 
             if (err) {
-                entry.placeholder = 'Something went wrong.'
+                createChatbotMessage('Something went wrong. Please try again.')
+                entry.readOnly = false
+                entry.placeholder = 'Enter your prompt'
+                message_history.pop()
             } else {
                 // get the text
                 let response = data['choices'][0]['message']

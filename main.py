@@ -24,7 +24,9 @@ def generate_response():
         },
         {
             'role': 'user',
-            'content': 'Response format: replace all newlines with the string <br>. Use two to separate paragraphs, and use none on the very last line. If you need a bullet point list, use the HTML <ul> and <li> tags. Make sure to use British spellings.'
+            'content': '''Response format: replace all newlines with the string <br>. Use two to separate paragraphs, and use none on the very last line. 
+            If you need a bullet point list, use the HTML <ul> and <li> tags.
+            Make sure to use British spellings.'''
         }
     ]
 
