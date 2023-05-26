@@ -1,5 +1,6 @@
 # chatgpt-3.5-turbo-chatbot
 This is my own Flask webapp for interacting with OpenAI's ChatGPT-3.5-Turbo.
+It should be noted that this is not the most recent version of it - but this is the newest that I can make public.
 
 ### required modules:
 - flask
